@@ -35,6 +35,9 @@
         <activity
             android:name=".circle.CircleActivity"
             android:label="Circle position" />
+        <activity
+            android:name=".group.GroupActivity"
+            android:label="Group" />
     </application>
 
 </manifest>

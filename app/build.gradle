@@ -30,6 +30,7 @@ android {
                     'src/main/res/barrier',
                     'src/main/res/circle',
                     'src/main/res/commons',
+                    'src/main/res/group',
                     'src/main/res/guideline',
                     'src/main/res/home',
                     'src/main/res/linear_group',

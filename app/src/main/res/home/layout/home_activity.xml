@@ -63,9 +63,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Circle position"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/group_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_group_btn" />
+
+    <Button
+        android:id="@+id/group_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_position_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

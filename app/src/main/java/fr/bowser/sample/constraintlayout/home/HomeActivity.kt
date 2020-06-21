@@ -4,7 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import fr.bowser.sample.constraintlayout.barrier.BarrierActivity
 import fr.bowser.sample.constraintlayout.circle.CircleActivity
+import fr.bowser.sample.constraintlayout.databinding.GroupActivityBinding
 import fr.bowser.sample.constraintlayout.databinding.HomeActivityBinding
+import fr.bowser.sample.constraintlayout.group.GroupActivity
 import fr.bowser.sample.constraintlayout.guideline.GuidelineActivity
 import fr.bowser.sample.constraintlayout.linear_group.LinearGroupActivity
 import fr.bowser.sample.constraintlayout.placeholder.PlaceholderActivity
@@ -28,5 +30,6 @@ class HomeActivity : AppCompatActivity() {
         binding.sizePercentBtn.setOnClickListener { SizePercentActivity.startActivity(this) }
         binding.linearGroupBtn.setOnClickListener { LinearGroupActivity.startActivity(this) }
         binding.circlePositionBtn.setOnClickListener { CircleActivity.startActivity(this) }
+        binding.groupBtn.setOnClickListener { GroupActivity.startActivity(this) }
     }
 }
