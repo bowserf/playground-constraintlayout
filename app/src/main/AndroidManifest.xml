@@ -38,6 +38,9 @@
         <activity
             android:name=".group.GroupActivity"
             android:label="Group" />
+        <activity
+            android:name=".flow.FlowActivity"
+            android:label="Flow" />
     </application>
 
 </manifest>

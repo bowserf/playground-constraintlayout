@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="view_1, view_2, view_3, view_4, view_5, view_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:flow_wrapMode="aligned" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="#03A9F4" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#FFEB3B" />
+
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#F44336" />
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#9C27B0" />
+
+    <View
+        android:id="@+id/view_5"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:background="#FF9800" />
+
+    <View
+        android:id="@+id/view_6"
+        android:layout_width="25dp"
+        android:layout_height="100dp"
+        android:background="#4CAF50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

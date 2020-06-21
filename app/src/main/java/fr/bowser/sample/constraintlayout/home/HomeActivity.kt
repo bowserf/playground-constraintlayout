@@ -6,6 +6,7 @@ import fr.bowser.sample.constraintlayout.barrier.BarrierActivity
 import fr.bowser.sample.constraintlayout.circle.CircleActivity
 import fr.bowser.sample.constraintlayout.databinding.GroupActivityBinding
 import fr.bowser.sample.constraintlayout.databinding.HomeActivityBinding
+import fr.bowser.sample.constraintlayout.flow.FlowActivity
 import fr.bowser.sample.constraintlayout.group.GroupActivity
 import fr.bowser.sample.constraintlayout.guideline.GuidelineActivity
 import fr.bowser.sample.constraintlayout.linear_group.LinearGroupActivity
@@ -31,5 +32,6 @@ class HomeActivity : AppCompatActivity() {
         binding.linearGroupBtn.setOnClickListener { LinearGroupActivity.startActivity(this) }
         binding.circlePositionBtn.setOnClickListener { CircleActivity.startActivity(this) }
         binding.groupBtn.setOnClickListener { GroupActivity.startActivity(this) }
+        binding.flowBtn.setOnClickListener { FlowActivity.startActivity(this) }
     }
 }

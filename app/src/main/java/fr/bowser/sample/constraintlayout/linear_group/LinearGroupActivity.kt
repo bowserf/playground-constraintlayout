@@ -25,13 +25,16 @@ class LinearGroupActivity : AppCompatActivity() {
         constraintSet.clone(binding.content.root)
 
         // init views
-        constraintSet.setHorizontalChainStyle(binding.content.viewLeft.id,ConstraintSet.CHAIN_PACKED)
+        constraintSet.setHorizontalChainStyle(
+            binding.content.viewLeft.id,
+            ConstraintSet.CHAIN_PACKED
+        )
         constraintSet.applyTo(binding.content.root)
-        binding.chainTypeChoice.check(binding.chainTypeChoicePackged.id)
+        binding.chainTypeChoice.check(binding.chainTypeChoicePacked.id)
 
-        binding.chainTypeChoice.setOnCheckedChangeListener { group, checkedId ->
+        binding.chainTypeChoice.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId) {
-                R.id.chain_type_choice_packged -> {
+                R.id.chain_type_choice_packed -> {
                     constraintSet.setHorizontalChainStyle(
                         binding.content.viewLeft.id,
                         ConstraintSet.CHAIN_PACKED

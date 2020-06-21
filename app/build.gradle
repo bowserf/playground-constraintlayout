@@ -30,6 +30,7 @@ android {
                     'src/main/res/barrier',
                     'src/main/res/circle',
                     'src/main/res/commons',
+                    'src/main/res/flow',
                     'src/main/res/group',
                     'src/main/res/guideline',
                     'src/main/res/home',
@@ -49,6 +50,6 @@ dependencies {
     // AndroidX
     implementation 'androidx.core:core-ktx:1.3.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta7'
     implementation("androidx.cardview:cardview:1.0.0")
 }
