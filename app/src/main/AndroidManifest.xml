@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.bowser.sample.constraintlayout">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".home.HomeActivity"
+            android:label="[Sample] ConstraintLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".barrier.BarrierActivity"
+            android:label="Barriere" />
+        <activity
+            android:name=".guideline.GuidelineActivity"
+            android:label="Guideline" />
+        <activity
+            android:name=".placeholder.PlaceholderActivity"
+            android:label="Placeholder" />
+        <activity
+            android:name=".size_percent.SizePercentActivity"
+            android:label="Size percent" />
+        <activity
+            android:name=".linear_group.LinearGroupActivity"
+            android:label="Linear group" />
+        <activity
+            android:name=".circle.CircleActivity"
+            android:label="Circle position" />
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/moving_width_view"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#456123"
+        android:gravity="center"
+        android:text="Moving width view"
+        app:layout_constraintEnd_toEndOf="@id/vertical_guide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fixed_width_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#8799a9"
+        android:gravity="center"
+        android:text="Fixed width view"
+        app:layout_constraintStart_toStartOf="@id/moving_width_view"
+        app:layout_constraintTop_toBottomOf="@id/moving_width_view" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="moving_width_view, fixed_width_text" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#1579cc"
+        android:gravity="center"
+        android:text="Start constraint on barrier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/barrier"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

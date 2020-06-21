@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeActivity">
+
+    <Button
+        android:id="@+id/placeholder_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placeholder"
+        app:layout_constraintBottom_toTopOf="@id/barrier_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/barrier_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Barrier"
+        app:layout_constraintBottom_toTopOf="@id/guideline_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placeholder_btn" />
+
+    <Button
+        android:id="@+id/guideline_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guideline"
+        app:layout_constraintBottom_toTopOf="@id/size_percent_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_btn" />
+
+    <Button
+        android:id="@+id/size_percent_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Size percent"
+        app:layout_constraintBottom_toTopOf="@id/linear_group_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_btn" />
+
+    <Button
+        android:id="@+id/linear_group_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear group"
+        app:layout_constraintBottom_toTopOf="@id/circle_position_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/size_percent_btn" />
+
+    <Button
+        android:id="@+id/circle_position_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Circle position"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_group_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

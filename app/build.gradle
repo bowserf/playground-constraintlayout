@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "fr.bowser.sample.constraintlayout"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/barrier',
+                    'src/main/res/circle',
+                    'src/main/res/commons',
+                    'src/main/res/guideline',
+                    'src/main/res/home',
+                    'src/main/res/linear_group',
+                    'src/main/res/placeholder',
+                    'src/main/res/size_percent',
+            ]
+        }
+    }
+}
+
+dependencies {
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // AndroidX
+    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation("androidx.cardview:cardview:1.0.0")
+}
