@@ -7,85 +7,62 @@
     android:layout_height="match_parent"
     tools:context=".home.HomeActivity">
 
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="barrier_btn, circle_position_btn, flow_btn, group_btn, guideline_btn, linear_group_btn, placeholder_btn, size_percent_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/placeholder_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Placeholder"
-        app:layout_constraintBottom_toTopOf="@id/barrier_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        android:text="Placeholder" />
 
     <Button
         android:id="@+id/barrier_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Barrier"
-        app:layout_constraintBottom_toTopOf="@id/guideline_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/placeholder_btn" />
+        android:text="Barrier" />
 
     <Button
         android:id="@+id/guideline_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guideline"
-        app:layout_constraintBottom_toTopOf="@id/size_percent_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barrier_btn" />
+        android:text="Guideline" />
 
     <Button
         android:id="@+id/size_percent_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Size percent"
-        app:layout_constraintBottom_toTopOf="@id/linear_group_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_btn" />
+        android:text="Size percent" />
 
     <Button
         android:id="@+id/linear_group_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Linear group"
-        app:layout_constraintBottom_toTopOf="@id/circle_position_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/size_percent_btn" />
+        android:text="Linear group" />
 
     <Button
         android:id="@+id/circle_position_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Circle position"
-        app:layout_constraintBottom_toTopOf="@id/group_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_group_btn" />
+        android:text="Circle position" />
 
     <Button
         android:id="@+id/group_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Group"
-        app:layout_constraintBottom_toTopOf="@id/flow_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/circle_position_btn" />
+        android:text="Group" />
 
     <Button
         android:id="@+id/flow_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Flow"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/group_btn" />
+        android:text="Flow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
