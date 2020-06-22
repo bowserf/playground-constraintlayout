@@ -2,67 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home.HomeActivity">
 
-    <androidx.constraintlayout.helper.widget.Flow
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:constraint_referenced_ids="barrier_btn, circle_position_btn, flow_btn, group_btn, guideline_btn, linear_group_btn, placeholder_btn, size_percent_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabTextColor="#fff"
+        app:tabBackground="@drawable/home_tab_layout_bg"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/placeholder_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Placeholder" />
-
-    <Button
-        android:id="@+id/barrier_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Barrier" />
-
-    <Button
-        android:id="@+id/guideline_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Guideline" />
-
-    <Button
-        android:id="@+id/size_percent_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Size percent" />
-
-    <Button
-        android:id="@+id/linear_group_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Linear group" />
-
-    <Button
-        android:id="@+id/circle_position_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Circle position" />
-
-    <Button
-        android:id="@+id/group_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Group" />
-
-    <Button
-        android:id="@+id/flow_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Flow" />
+        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

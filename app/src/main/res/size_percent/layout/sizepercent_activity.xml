@@ -50,13 +50,14 @@
                 android:id="@+id/slider_width"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintBottom_toTopOf="@id/title_slider_height" />
 
             <TextView
                 android:id="@+id/title_slider_height"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="Percent height view"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@id/slider_height"
@@ -67,9 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_goneMarginBottom="32dp" />
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         </LinearLayout>
 

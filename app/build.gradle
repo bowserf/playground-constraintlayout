@@ -30,11 +30,13 @@ android {
                     'src/main/res/barrier',
                     'src/main/res/circle',
                     'src/main/res/commons',
+                    'src/main/res/constraintlayout_panel',
                     'src/main/res/flow',
                     'src/main/res/group',
                     'src/main/res/guideline',
                     'src/main/res/home',
                     'src/main/res/linear_group',
+                    'src/main/res/motionlayout_panel',
                     'src/main/res/placeholder',
                     'src/main/res/size_percent',
             ]
@@ -45,11 +47,17 @@ android {
 dependencies {
 
     // Kotlin
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version")
+
+    // Google
+    implementation("com.google.android.material:material:1.1.0") {
+        because("Needed to use TabLayout")
+    }
 
     // AndroidX
-    implementation 'androidx.core:core-ktx:1.3.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta7'
+    implementation("androidx.core:core-ktx:1.3.0")
+    implementation("androidx.appcompat:appcompat:1.1.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.0.0-beta7")
     implementation("androidx.cardview:cardview:1.0.0")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
 }

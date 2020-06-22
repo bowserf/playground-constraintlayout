@@ -2,16 +2,12 @@ package fr.bowser.sample.constraintlayout.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import fr.bowser.sample.constraintlayout.barrier.BarrierActivity
-import fr.bowser.sample.constraintlayout.circle.CircleActivity
-import fr.bowser.sample.constraintlayout.databinding.GroupActivityBinding
+import androidx.fragment.app.Fragment
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.google.android.material.tabs.TabLayoutMediator
+import fr.bowser.sample.constraintlayout.constraintlayout_panel.ConstraintLayoutPanelFragment
 import fr.bowser.sample.constraintlayout.databinding.HomeActivityBinding
-import fr.bowser.sample.constraintlayout.flow.FlowActivity
-import fr.bowser.sample.constraintlayout.group.GroupActivity
-import fr.bowser.sample.constraintlayout.guideline.GuidelineActivity
-import fr.bowser.sample.constraintlayout.linear_group.LinearGroupActivity
-import fr.bowser.sample.constraintlayout.placeholder.PlaceholderActivity
-import fr.bowser.sample.constraintlayout.size_percent.SizePercentActivity
+import fr.bowser.sample.constraintlayout.motionlayout_panel.MotionLayoutPanelFragment
 
 class HomeActivity : AppCompatActivity() {
 
@@ -25,13 +21,28 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.barrierBtn.setOnClickListener { BarrierActivity.startActivity(this) }
-        binding.guidelineBtn.setOnClickListener { GuidelineActivity.startActivity(this) }
-        binding.placeholderBtn.setOnClickListener { PlaceholderActivity.startActivity(this) }
-        binding.sizePercentBtn.setOnClickListener { SizePercentActivity.startActivity(this) }
-        binding.linearGroupBtn.setOnClickListener { LinearGroupActivity.startActivity(this) }
-        binding.circlePositionBtn.setOnClickListener { CircleActivity.startActivity(this) }
-        binding.groupBtn.setOnClickListener { GroupActivity.startActivity(this) }
-        binding.flowBtn.setOnClickListener { FlowActivity.startActivity(this) }
+        binding.viewPager.adapter = ModeAdapter(this)
+
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
+            tab.text = when (position) {
+                0 -> "ConstraintLayout"
+                1 -> "MotionLayout"
+                else -> throw Exception("Not managed mode position: $position")
+            }
+        }.attach()
+
+    }
+
+    class ModeAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activity) {
+
+        override fun getItemCount(): Int = 2
+
+        override fun createFragment(position: Int): Fragment {
+            return when (position) {
+                0 -> ConstraintLayoutPanelFragment()
+                1 -> MotionLayoutPanelFragment()
+                else -> throw Exception("Not managed mode position: $position")
+            }
+        }
     }
 }
