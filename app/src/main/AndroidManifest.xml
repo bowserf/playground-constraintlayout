@@ -41,6 +41,9 @@
         <activity
             android:name=".flow.FlowActivity"
             android:label="Flow" />
+        <activity
+            android:name=".motionlayout_onswipe.MotionLayoutOnSwipeActivity"
+            android:label="MotionLayout OnSwipe" />
     </application>
 
 </manifest>

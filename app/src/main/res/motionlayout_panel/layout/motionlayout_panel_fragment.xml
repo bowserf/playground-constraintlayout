@@ -4,13 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TO DO"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="onswipe_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/onswipe_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OnSwipe" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

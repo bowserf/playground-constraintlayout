@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import fr.bowser.sample.constraintlayout.databinding.MotionlayoutPanelFragmentBinding
+import fr.bowser.sample.constraintlayout.motionlayout_onswipe.MotionLayoutOnSwipeActivity
 
 class MotionLayoutPanelFragment : Fragment() {
 
@@ -28,7 +29,7 @@ class MotionLayoutPanelFragment : Fragment() {
 
         val activity = activity!!
 
-        // TODO
+        binding.onswipeBtn.setOnClickListener { MotionLayoutOnSwipeActivity.startActivity(activity) }
     }
 
     override fun onDestroyView() {

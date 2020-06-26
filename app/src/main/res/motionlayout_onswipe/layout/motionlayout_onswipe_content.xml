@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:layoutDescription="@xml/scene_onswipe"
+    app:motionDebug="SHOW_ALL">
+
+    <View
+        android:id="@+id/swipeable_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#4CAF50" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
