@@ -1,16 +1,15 @@
-package fr.bowser.sample.constraintlayout.motionlayout_onclick
+package fr.bowser.sample.constraintlayout.motionlayout_autotransition
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import fr.bowser.sample.constraintlayout.databinding.MotionlayoutOnclickActivityBinding
-import fr.bowser.sample.constraintlayout.motionlayout_autotransition.MotionLayoutAutoTransitionActivity
+import fr.bowser.sample.constraintlayout.databinding.MotionlayoutAutoTransitionActivityBinding
 
-class MotionLayoutOnClickActivity : AppCompatActivity() {
+class MotionLayoutAutoTransitionActivity : AppCompatActivity() {
 
     private val binding by lazy(LazyThreadSafetyMode.NONE) {
-        MotionlayoutOnclickActivityBinding.inflate(
+        MotionlayoutAutoTransitionActivityBinding.inflate(
             layoutInflater
         )
     }
@@ -23,7 +22,7 @@ class MotionLayoutOnClickActivity : AppCompatActivity() {
     companion object {
 
         fun startActivity(context: Context) {
-            val intent = Intent(context, MotionLayoutOnClickActivity::class.java)
+            val intent = Intent(context, MotionLayoutAutoTransitionActivity::class.java)
             context.startActivity(intent)
         }
     }

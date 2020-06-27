@@ -50,6 +50,9 @@
         <activity
             android:name=".motionlayout_onclick.MotionLayoutOnClickActivity"
             android:label="MotionLayout OnClick" />
+        <activity
+            android:name=".motionlayout_autotransition.MotionLayoutAutoTransitionActivity"
+            android:label="MotionLayout Auto Transition" />
     </application>
 
 </manifest>

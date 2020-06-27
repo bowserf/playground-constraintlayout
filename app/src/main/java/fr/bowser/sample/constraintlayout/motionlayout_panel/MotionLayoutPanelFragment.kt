@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import fr.bowser.sample.constraintlayout.databinding.MotionlayoutPanelFragmentBinding
+import fr.bowser.sample.constraintlayout.motionlayout_autotransition.MotionLayoutAutoTransitionActivity
 import fr.bowser.sample.constraintlayout.motionlayout_onclick.MotionLayoutOnClickActivity
 import fr.bowser.sample.constraintlayout.motionlayout_onswipe.MotionLayoutOnSwipeActivity
 import fr.bowser.sample.constraintlayout.motionlayout_transition_key.MotionLayoutTransitionKeyActivity
@@ -33,6 +34,11 @@ class MotionLayoutPanelFragment : Fragment() {
 
         binding.onswipeBtn.setOnClickListener { MotionLayoutOnSwipeActivity.startActivity(activity) }
         binding.onclickBtn.setOnClickListener { MotionLayoutOnClickActivity.startActivity(activity) }
+        binding.autoTransitionBtn.setOnClickListener {
+            MotionLayoutAutoTransitionActivity.startActivity(
+                activity
+            )
+        }
         binding.keyPositionAttributeBtn.setOnClickListener {
             MotionLayoutTransitionKeyActivity.startActivity(
                 activity
