@@ -44,6 +44,9 @@
         <activity
             android:name=".motionlayout_onswipe.MotionLayoutOnSwipeActivity"
             android:label="MotionLayout OnSwipe" />
+        <activity
+            android:name=".motionlayout_transition_key.MotionLayoutTransitionKeyActivity"
+            android:label="MotionLayout Key Position/Attribute" />
     </application>
 
 </manifest>

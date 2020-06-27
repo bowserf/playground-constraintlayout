@@ -38,6 +38,7 @@ android {
                     'src/main/res/linear_group',
                     'src/main/res/motionlayout_onswipe',
                     'src/main/res/motionlayout_panel',
+                    'src/main/res/motionlayout_transition_key',
                     'src/main/res/placeholder',
                     'src/main/res/size_percent',
             ]
