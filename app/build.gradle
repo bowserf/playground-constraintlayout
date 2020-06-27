@@ -36,6 +36,7 @@ android {
                     'src/main/res/guideline',
                     'src/main/res/home',
                     'src/main/res/linear_group',
+                    'src/main/res/motionlayout_onclick',
                     'src/main/res/motionlayout_onswipe',
                     'src/main/res/motionlayout_panel',
                     'src/main/res/motionlayout_transition_key',
