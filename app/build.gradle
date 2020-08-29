@@ -35,6 +35,7 @@ android {
                     'src/main/res/group',
                     'src/main/res/guideline',
                     'src/main/res/home',
+                    'src/main/res/layer',
                     'src/main/res/linear_group',
                     'src/main/res/motionlayout_autotransition',
                     'src/main/res/motionlayout_onclick',

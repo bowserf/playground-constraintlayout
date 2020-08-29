@@ -11,6 +11,7 @@ import fr.bowser.sample.constraintlayout.databinding.ConstraintlayoutPanelFragme
 import fr.bowser.sample.constraintlayout.flow.FlowActivity
 import fr.bowser.sample.constraintlayout.group.GroupActivity
 import fr.bowser.sample.constraintlayout.guideline.GuidelineActivity
+import fr.bowser.sample.constraintlayout.layer.LayerActivity
 import fr.bowser.sample.constraintlayout.linear_group.LinearGroupActivity
 import fr.bowser.sample.constraintlayout.placeholder.PlaceholderActivity
 import fr.bowser.sample.constraintlayout.size_percent.SizePercentActivity
@@ -40,6 +41,7 @@ class ConstraintLayoutPanelFragment : Fragment() {
         binding.guidelineBtn.setOnClickListener { GuidelineActivity.startActivity(activity) }
         binding.placeholderBtn.setOnClickListener { PlaceholderActivity.startActivity(activity) }
         binding.sizePercentBtn.setOnClickListener { SizePercentActivity.startActivity(activity) }
+        binding.layerBtn.setOnClickListener { LayerActivity.startActivity(activity) }
         binding.linearGroupBtn.setOnClickListener { LinearGroupActivity.startActivity(activity) }
         binding.circlePositionBtn.setOnClickListener { CircleActivity.startActivity(activity) }
         binding.groupBtn.setOnClickListener { GroupActivity.startActivity(activity) }
